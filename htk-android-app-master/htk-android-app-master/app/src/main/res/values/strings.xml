@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">HTK</string>
+    <string name="splash">Splash Screen</string>
+    <string name="Login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="fpaswrd"><u>Forgot Password?</u></string>
+    <string name="login">Or Login using:</string>
+    <string name="account">Donot have an Account?</string>
+    <string name="create">Create now</string>
+    <string name="singup">Create Account</string>
+    <string name="choose">Choose a username</string>
+    <string name="fullname">Name</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="dob">Date of Birth</string>
+    <string name="email">Email</string>
+    <string name="nationality">Nationality</string>
+    <string name="allergies">Allergies</string>
+    <string name="already">Already have an account?</string>
+
+    <string name="facebook_app_id">701855030584316</string>
+    <string name="fb_login_protocol_scheme">fb701855030584316</string>
+
+
+    <string-array name="nation">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>America</item>
+        <item>Argentine</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Azerbaijan</item>
+        <item>Bangladesh</item>
+        <item>Brazil</item>
+        <item>British Virgin Island</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>Cost Rica</item>
+        <item>Czech</item>
+        <item>Egypt</item>
+        <item>United Arab Emirates</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Hungary</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iran</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Japan</item>
+        <item>Kuwait</item>
+        <item>Lebanon</item>
+        <item>Mexica</item>
+        <item>Nepal</item>
+        <item>New Zealand</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palestine</item>
+        <item>Poland</item>
+        <item>Qatar</item>
+        <item>Romania</item>
+        <item>Singapore</item>
+        <item>Saudi Arabia</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Vietnam</item>
+        <item>Yemen</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+    <string-array name="wellness">
+        <item>Select Treatment</item>
+        <item>Vit IV</item>
+        <item>Skin IV</item>
+        <item>Health IV</item>
+        <item>Energy IV</item>
+        <item>Hair IV</item>
+    </string-array>
+
+    <string name="forgot">Please Enter your Email to recover your account</string>
+    <string name="send">Send</string>
+    <string name="test">Reports</string>
+    <string name="services">Services</string>
+    <string name="Account">Account</string>
+    <string name="reports">Medical Reports</string>
+    <string name="greeting">Hello</string>
+    <string name="appointment">Make Appointment for:</string>
+    <string name="dvisit">Doctor Visit</string>
+    <string name="lvisit">Laboratory on call</string>
+    <string name="pvisit">Physiotherapist Visit</string>
+    <string name="nvisit">Nursing Care</string>
+    <string name="wvisit">Wellness Treatments</string>
+    <string name="ovisit">Offers / Packages </string>
+    <string name="select">Select the Type of Symptoms(s)</string>
+    <string name="spain">Stomach Pain</string>
+    <string name="fpain">Fever</string>
+    <string name="npain">Nausea</string>
+    <string name="bpain">Body Pain / Vomiting</string>
+    <string name="cpain">Sore Throat / Cough</string>
+    <string name="other">Other:</string>
+    <string name="day">Please Select an Appointment Day</string>
+    <string name="time">Please Select an Appointment Time</string>
+    <string name="note">Special Note</string>
+    <string name="mail">Receive Confirmation Mail</string>
+    <string name="book">Book Appointment</string>
+    <string name="testype">Select the Type of Test(s):</string>
+    <string name="btest">Blood Test</string>
+    <string name="ltest">Liver Function Test</string>
+    <string name="ktest">Kidney Function Test</string>
+    <string name="ttest">Thyroid Function Test</string>
+    <string name="stest">Sugar Test</string>
+    <string name="tetest">Texicology Test</string>
+    <string name="atest">Albium Test</string>
+    <string name="complaint">Select the Type of Complaint</string>
+    <string name="neck">Neck and Back Pain</string>
+    <string name="knee">Knee Pain</string>
+    <string name="injury">Spinal Cord Injury</string>
+    <string name="shoulder">Shoulder Pain</string>
+    <string name="tent">Tendonitis</string>
+    <string name="leg">Leg Pain</string>
+    <string name="diz">Dizziness</string>
+    <string name="explain">Please Explain your Condition</string>
+    <string name="nursing">Select the type of Nursing required</string>
+    <string name="ecare">Elderly Care</string>
+    <string name="ccare">Chronic and Palliative Care</string>
+    <string name="bcare">Baby / Infant Care</string>
+    <string name="ncarre">Nursing Services</string>
+    <string name="pcare">Post Operative Care</string>
+    <string name="well">Select the Test(s) and Treatment(s)</string>
+    <string name="abc">abc</string>
+    <string name="efg">efg</string>
+    <string name="hij">hij</string>
+    <string name="klm">klm</string>
+    <string name="nop">nop</string>
+    <string name="special">Special Offers and Packages</string>
+    <string name="pqr">pqr</string>
+    <string name="stu">stu</string>
+    <string name="vwx">vwx</string>
+    <string name="take">Take Offer</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

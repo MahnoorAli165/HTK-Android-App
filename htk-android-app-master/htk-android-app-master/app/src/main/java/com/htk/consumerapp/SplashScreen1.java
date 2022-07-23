@@ -1,0 +1,27 @@
+package com.htk.consumerapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+public class SplashScreen1 extends AppCompatActivity {
+
+    ConstraintLayout screen;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash_screen1);
+
+        screen = findViewById(R.id.screen1);
+        screen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SplashScreen1.this, SplashScreen2.class));
+            }
+        });
+    }
+}

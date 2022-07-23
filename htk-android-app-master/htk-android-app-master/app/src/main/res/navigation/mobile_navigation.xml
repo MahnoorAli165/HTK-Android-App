@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.htk.consumerapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_reports2"
+            app:destination="@id/navigation_appointments" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_appointments"
+        android:name="com.htk.consumerapp.ui.appointments.AppointmentsFragment"
+        android:label="Reports"
+        tools:layout="@layout/fragment_appointments">
+        <action
+            android:id="@+id/action_navigation_reports_to_navigation_profile2"
+            app:destination="@id/navigation_reports" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_reports"
+        android:name="com.htk.consumerapp.ui.reports.ReportsFragment"
+        android:label="Reports"
+        tools:layout="@layout/fragment_reports">
+        <action
+            android:id="@+id/action_navigation_reports_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.htk.consumerapp.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+</navigation>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NursingCare">
+
+    <EditText
+        android:id="@+id/searchTextN"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/roundbutton_blue"
+        android:backgroundTint="@color/colorDarkBlue"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:textSize="14sp"
+        android:textCursorDrawable="@drawable/cursor_color_white"
+        android:hint="Enter city, place or street"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <ImageView
+        android:id="@+id/searchIconN"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/search_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/searchTextN"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <ImageView
+        android:id="@+id/center_pinN"
+        android:layout_width="25dp"
+        android:layout_height="45dp"
+        android:src="@drawable/center_icon"
+        app:layout_constraintBottom_toBottomOf="@id/mapN"
+        app:layout_constraintEnd_toEndOf="@id/mapN"
+        app:layout_constraintStart_toStartOf="@id/mapN"
+        app:layout_constraintTop_toTopOf="@id/mapN"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbarThumbVertical="@color/colorDarkBlue"
+        android:fillViewport="true"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nursingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:text="@string/nvisit"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorDarkBlue"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.134"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="84dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/nurse_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"  />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/nursing"
+                android:textColor="@color/title"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+            <RadioGroup
+                android:id="@+id/nursingRadiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ecare" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ccare" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bcare" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ncarre" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pcare"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/nursingConditionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="25dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:backgroundTint="@color/colorTransparent"
+                android:textColorHint="@color/colorLightBlue"
+                android:hint="Briefly describe the need..."
+                android:textColor="@color/colorDarkBlue"
+                android:background="@color/colorTransparent"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nursingRadiogroup" />
+
+            <EditText
+                android:id="@+id/nursingSpecialNote"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:background="@drawable/light_blue_edittext_style"
+                android:paddingLeft="20dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="15sp"
+                android:hint="Anything special you want to share?"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/day"
+                android:textColor="@color/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nursingConditionText" />
+
+            <EditText
+                android:id="@+id/appointmentDateN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/light_blue_edittext_style"
+                android:paddingLeft="20dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="15sp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="Appointment Date"
+                android:inputType="date"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/time"
+                android:textColor="@color/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appointmentDateN" />
+
+            <EditText
+                android:id="@+id/appointmentTimeN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/light_blue_edittext_style"
+                android:paddingLeft="20dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="15sp"
+                android:ems="10"
+                android:hint="Appointment Time"
+                android:inputType="time"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/note"
+                android:textColor="@color/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appointmentTimeN" />
+
+            <CheckBox
+                android:id="@+id/nursingCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/mail"
+                android:textColor="@color/colorDarkBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nursingSpecialNote" />
+
+            <TextView
+                android:id="@+id/locationLabelN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location not set"
+                android:textColor="	#FF0000"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/labButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nursingCheckbox"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/locationButtonN"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/light_blue_button_style"
+                android:text="Set Location"
+                android:textColor="#FFF"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/nursingButton"
+                app:layout_constraintStart_toEndOf="@id/locationLabelN"
+                app:layout_constraintTop_toBottomOf="@+id/nursingCheckbox"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ProgressBar
+                android:id="@+id/progressbarUploadN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/attachBN"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:background="@drawable/light_blue_button_style"
+                android:text="ATTACH REPORT (optional)"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/locationButtonN"
+                app:layout_constraintVertical_bias="0.141" />
+
+            <ImageView
+                android:id="@+id/attachment_iconN"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/file_icon"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/attachBN" />
+
+            <TextView
+                android:id="@+id/filenameN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/attachment_iconN" />
+
+            <Button
+                android:id="@+id/nursingButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/darkbue_button_style"
+                android:text="@string/book"
+                android:textColor="#fff"
+                android:layout_marginTop="130dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/attachBN"
+                app:layout_constraintVertical_bias="0.243"  />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorTransparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nursingButton" />
+
+            <ProgressBar
+                android:id="@+id/progressBar6"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mapN"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".LocationActivity" />
+
+    <Button
+        android:id="@+id/confirmLocationButtonN"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/darkbue_button_style"
+        android:text="Confirm Location"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mapN"
+        app:layout_constraintVertical_bias="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

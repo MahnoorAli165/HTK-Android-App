@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_result"
+        android:icon="@drawable/ic_exposure_black_24dp"
+        android:title="@string/test"/>
+    <item
+        android:id="@+id/nav_appointment"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="@string/services"/>
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/Account"/>
+
+</menu>
